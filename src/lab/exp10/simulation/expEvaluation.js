@@ -112,8 +112,8 @@ window.model = {
 				start--;
 				end++;
 			}
-		//	if(start>0 && expression[start - 1] == '(' && (end+1) < expression.length && expression[end+1] == ')') 
-		//			expression = expression.substring(0, start-1) + sub.toString() + expression.substring(end+2, expression.length);
+		if(start>0 && expression[start - 1] == '(' && (end+1) < expression.length && expression[end+1] == ')') 
+	    expression = expression.substring(0, start-1) + sub.toString() + expression.substring(end+2, expression.length);
 			expression = expression.substring(0, start) + sub.toString() + expression.substring(end+1, expression.length);
 			return expression;
 		}
