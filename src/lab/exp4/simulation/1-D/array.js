@@ -58,6 +58,8 @@ window.view = {
 			if( userInput !== 0 ) {
 				var element = document.getElementById('inputButtonRadio')
 				element.className = 'show, radioButtonDivision'
+				if(element.className!=btnRandom)
+				element.className ='show ,arrayInputArea'
 				this.disableButton('btnOk')
 				this.changeClass( 'btnOk', 'okButton buttonDisable' )
 				this.enableButton( 'btnStart' )
